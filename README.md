@@ -63,6 +63,9 @@ gulp.src('./dist/**')
 .pipe(s3(aws, options));
 
 });
+
+## Why is this forked?
+There are some problems with this implementation, for example, the forceful remove of .gz, we would like to gz everything but allow the browsers to specify if they wish to retrieve a gz version, this doesnt quite allow this.
 ```
 
 ## License
